@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment No 02</title>
+</head>
+<body>
+    <script>
+        // Assignment No 02
+
+ // Question 1
+//  Write a JavaScript program to compute the sum of the two given integers. If
+// the two values are same, then returns triple their sum.
+
+// let num1=5;
+// let num2=5;
+// function sum(num1,num2) {
+//     let sum=num1+num2;
+//     if (num1==num2) {
+//         sum*=3;
+//         return sum;
+//     }
+// }
+// console.log(sum(num1, num2));
+
+
+
+
+// Question no 2
+// 2. Write a JavaScript program to check two given numbers and return true if
+// one of the number is 50 or if their sum is 50
+
+function check(a,b) {
+  if (a===50) {
+    console.log("Correct");
+}
+else if (b===50) {
+    console.log("True");
+}
+else{
+    console.log("false");
+}
+}
+console.log(check(20,50));
+
+
+
+
+
+// Question 3
+//Write a JavaScript program to check from two given integers, whether one is
+// positive and another one is negative.
+
+// let a=22/3;
+// let b=-4;
+// if (a<0 && b<0) {
+//     console.log(a,'a is negative a',b,'b is negative');
+// }
+
+// else if(a<0 && b>0){
+//     console.log(a, "a is negative c",b,"a is positive");
+// }
+// else if(a>0 && b<0){
+//     console.log(a,'a is positive d',b,'b is negative');
+// }
+// else if(a>0 && b>0){
+//     console.log("Both",a,'a is positive',b,'b is positive');
+// }
+// else if(a>=0 && b>0){
+//     console.log(a,'a is neutral j',b,'b is positive');
+// }
+// else if(a==0 && b==0){
+//     console.log("Both",a,'a is neutral k',b,'b is neutral');
+// } 
+// else if(a>0 && b==0){
+//     console.log("Both",a,'a is positive x',b,'b is neutral');
+// } 
+// else if(a<0 && b==0){
+//     console.log("Both",a,'a is negative',b,'b is neutral');
+// }
+// else if(a==0 && b<0){
+//     console.log("Both",a,'a is neutral',b,'b is negative');
+// }
+// else{
+//     console.log('Both is neutral since both value or zero ');
+// }
+
+
+
+
+
+
+// Question 4
+// Write a JavaScript program to create a new string adding "Py" in front of a
+// given string. If the given string begins with "Py" then return the original string.
+
+
+function fun(a) {
+    let b;
+    console.log(typeof a, a);
+    if (typeof a === "string") {
+        if (a[0]==="P" && a[1]==="y"){
+            return a;
+        }
+        else {
+            b="Py"+a;
+            return b;
+        }    
+    }
+    else{
+        return false;
+    }
+}
+console.log(fun("uzair"));
+
+
+
+
+
+// Question 5
+// Write a JavaScript program to create a new string from a given string
+// changing the position of first and last characters. The string length must be
+// greater than or equal to 1.
+
+
+function fun(a){
+let b= a[0];
+let c=a[a.length-1];
+let d = c + a.slice(1, -1) + b
+return d;
+}
+console.log(fun("adn"));
+
+
+
+
+
+// Question No 6
+// Write a JavaScript program to check whether a given positive number is a
+// multiple of 3 or a multiple of 7.
+
+
+function check(num1) {
+    if (num1%3 ==0 && num1%7==0) {
+       return num1 +" is Multiple of 3 and 7";
+    }
+    else if(num1%3 ==0){
+        return num1 + " is multiple of 3";
+    }
+    else if(num1%7 ==0){
+        return num1 + " is multiple of 7";
+    }
+    else{
+        return num1 + " no multiple "
+    }
+}
+console.log(check(5));
+
+
+
+
+// Question No 7
+// . Write a JavaScript program to check two given non-negative integers that
+// determine whether one of the numbers (not both) is multiple of 7 or 11.
+
+
+function check(num1, num2) {
+    if ((num1 % 7 === 0 || num1 % 11 === 0) && (num2 % 7 !== 0 && num2 % 11 !== 0)) {
+      return true;
+    } else if ((num2 % 7 === 0 || num2 % 11 === 0) && (num1 % 7 !== 0 && num1 % 11 !== 0)) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+  console.log(check(35, 44)); 
+
+
+
+
+
+// Question No 8
+// Write a JavaScript program to replace every character in a given string with
+// the character following it in the alphabet
+
+
+    // let a=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+    // let c="";
+    // let d = "";
+    // function check(b) {
+    //     for (let i = 0; i < b.length; i++) {
+    //         c = a.indexOf(b[i]);
+    //         if (c == 0 || c == 26) {
+    //             d = d + a[c + 25];
+    //         } else {
+    //             d = d + a[c - 1];
+    //         }
+    //     }
+    //     return d;
+    // }
+    // console.log(check("Uzair"));
+
+
+
+
+// // Question No 9
+// Write a JavaScript program to convert the letters of a given string in
+// alphabetical order.
+
+function check(a) {
+    a=a.split('').sort().join('');
+    return a;
+}
+console.log(check("uzair"));
+
+
+
+
+// Question 10
+// . Write a JavaScript program to count the number of vowels in a given string.
+
+//   let c=0
+// let b=['A','E','I','O','U','a','e','i','o','u']
+// function check(a) {
+//     for (let i = 0; i < b.length; i++) {
+//       for (let j = 0; j < a.length; j++) {
+//         if(a[j]==b[i]){
+//           c++
+//         }
+//         // let c=a.includes(b);
+//         // console.log(c);
+//       }
+//     }
+//     return ("in this string we have "+ c+ " vowels of letter...");
+// }
+// console.log(check("Uaidre"));
+
+
+
+// Question 11
+// Write a JavaScript program to concatenate two strings except their first
+// character
+
+
+  function concatination(a,b) {
+    let c=a.slice(1);
+    let d=b.slice(1);
+    result=c+d;
+    return result;
+  }
+  console.log(concatination("Nouman","Aslam"));
+
+
+
+// // Question No 12
+// Write a JavaScript program to move the last three characters to the start of
+// a given string. The string length must be greater or equal to three.
+
+
+function check(a) {
+    a=a.slice(0,2)
+    let b="nan"
+    c=b+a
+    return c;
+}
+console.log(check("djlsjka"));
+
+
+
+// // Question 13
+// Write a JavaScript program to check whether it is possible to replace $ in a
+// given expression x $ y = z with one of the four signs +, -, * or / to obtain a correct
+// expression.
+// For example x = 10, y = 30 and z = 300, we can replace $ with a multiple
+// operator (*) to obtain x * y = z
+
+
+function check(a,b,c) {
+ if (a+b==c) {
+  console.log(a + " + " + b +" = " +c);
+ }
+ else if (a*b==c) {
+  console.log(a + " * " + b +" = " +c);
+ }
+ else if (a-b==c) {
+  console.log(a + " - " + b +" = " +c);
+ }
+ else if (a/b==c) {
+  console.log(a + " / " + b +" = " +c);
+ }
+ else{
+  console.log("Both value are not equal to third");
+}
+}
+console.log(check(10,30,40));
+
+
+
+
+// Question 14
+// Write a JavaScript program to find the number which appears most in a
+// given array of integers.
+
+
+let b=0;
+let c=0;
+let most
+function check(a) {
+  for (let i = 0; i < a.length; i++) {
+    
+    for (let j = 0; j < a.length; j++) {
+    if (a[i]==a[j]) {
+      b=b+1;
+      if (c<b) {
+        c=b;
+        most =a[i];
+      }
+    }  
+    }
+  }
+  return most;
+}
+console.log(check("1,2,3,43,3,3,3,3,3,3,3,3,3"));
+
+
+
+
+// // Question 15
+// . Write a JavaScript program to check a number from three given numbers
+// where two numbers are equal, find the third one.
+
+
+function check(x,y,z) {
+  if (x!==y && x!==z && y!==z) 
+    return " Three number are unequel"
+    if (x==y) 
+      return z;
+      if(x==z)
+      return y;
+      if(y==z)
+      return x;
+  return x;
+}
+console.log(check(2,2,3));
+
+    </script>
+</body>
+</html>
